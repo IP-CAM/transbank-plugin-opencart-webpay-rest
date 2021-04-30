@@ -44,6 +44,32 @@ Install `MarkDown-PDF` with` NPM I -G MarkDown-PDF` and then to generate the fil
 CD docs /
 MarkDown-PDF Installation.md
 ```
+
+Generate a new version
+
+To generate a new version, you must create a PR (with a "Prepare Release X.Y.Z" title with the values ​​that correspond to X, Y and Z). The SEMVER standard must be followed to determine if the X value is increased (if there are non-recompatible changes), and (for retractionable improvements) or Z (if there were only bugs corrections).
+
+In that PR the following changes should be included:
+
+    Modify the CHANGELOG.MD file to include a new entry (at the beginning) for x.y.z to explain the changes in Spanish.
+
+After obtaining approval from the Pull Request, you must mix Master and immediately generate a github release with the Tag vx.y.z. In the release description you must put the same as you added to the Changelog.
+
+With that travis CI will automatically generate a new version of the plugin and update the GitHub release with the plugin zip.
+
+    © 2021 Github, Inc.
+    TERMS.
+    Privacy
+    SECURITY.
+    Status
+    Docs.
+
+    Contact Github.
+    Pricing
+    API.
+    Training
+    Blog
+    
 ---------
 
 # Transbank Opencart 3.x Webpay Plugin
