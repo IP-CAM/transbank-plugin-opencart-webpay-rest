@@ -1,3 +1,51 @@
+# Transbank OpenCart 3.x Webpay Plugin
+
+## Description
+
+This OpenCart 3.x plugin implements
+The [SDK PHP of Transbank] (https://github.com/transbankdevelopers/transbank-sdk-php)
+
+## Dependencies
+
+* Transbank / Transbank-SDK (Composer)
+* FPDF.
+
+
+## Installing the plugin for a trade
+
+The Installation Manual for the End User is available [ACÁ] (DOCS / INSTALLATION.MD) OR
+in pdf [here] (https://github.com/transbankdevelopers/transbank-plugin-opencart-webpay/blob/master/docs/installation.pdf)
+
+
+## Note
+- The PHP SDK version is found in the file `config.sh` and
+In `SRC / Upload / System / Library / Transbank / Composer.json`
+
+** Note: ** The version of the PHP SDK is located in the Script Config.sh
+
+## Prepare the project to download Dependencies
+
+    ./config.sh.
+
+## Create a version of the packaged plugin
+
+    ./package.sh.
+
+## Developing
+
+To support the rapid uprising of a development environment, we have created the specification of containers a
+through Docker Compose.
+
+To use it follow the following [Readme OpenCart 3.x] (./ Docker-OpenCart3)
+
+### Update the installation PDF
+Install `MarkDown-PDF` with` NPM I -G MarkDown-PDF` and then to generate the file `Installation.pdf` be it must run:
+```
+CD docs /
+MarkDown-PDF Installation.md
+```
+---------
+
 # Transbank Opencart 3.x Webpay Plugin
 
 ## Descripción
